@@ -3,9 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-PresentationTier", "1-PresentationTier", "{370C0CEB-3095-46B2-ABC6-BBE3D6B42FF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-BussinesTier", "2-BussinesTier", "{96B53258-0AF3-43BE-A104-0B76C8BD32E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-DataAccessTier", "3-DataAccessTier", "{8D79D8DB-98A5-4D7A-B555-1B5FA21563E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-CommonTier", "4-CommonTier", "{DA420E17-1D20-45FB-A225-FFE243728096}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NttData.FileManagement.Business.Logic", "NttData.FileManagement.Business.Logic\NttData.FileManagement.Business.Logic.csproj", "{7F7ACF9F-88EF-4266-8385-2F58B2C41DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NttData.FileManagement.Presentation.WinSite", "NttData.FileManagement.Presentation.WinSite\NttData.FileManagement.Presentation.WinSite.csproj", "{35233F77-4211-4E75-851B-95968DB98290}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NttData.FileManagement.DataAccess.Repository", "NttData.FileManagement.DataAccess.Repository\NttData.FileManagement.DataAccess.Repository.csproj", "{96F39A17-917B-4E71-8F81-E4545E5FD37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NttData.FileManagement.Common.Model", "NttData.FileManagement.Common.Model\NttData.FileManagement.Common.Model.csproj", "{F87E4192-05AB-4DD7-B6E6-A5BF898A9CDA}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F7ACF9F-88EF-4266-8385-2F58B2C41DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7ACF9F-88EF-4266-8385-2F58B2C41DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7ACF9F-88EF-4266-8385-2F58B2C41DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7ACF9F-88EF-4266-8385-2F58B2C41DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35233F77-4211-4E75-851B-95968DB98290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35233F77-4211-4E75-851B-95968DB98290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35233F77-4211-4E75-851B-95968DB98290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35233F77-4211-4E75-851B-95968DB98290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F39A17-917B-4E71-8F81-E4545E5FD37B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F39A17-917B-4E71-8F81-E4545E5FD37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F39A17-917B-4E71-8F81-E4545E5FD37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F39A17-917B-4E71-8F81-E4545E5FD37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87E4192-05AB-4DD7-B6E6-A5BF898A9CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87E4192-05AB-4DD7-B6E6-A5BF898A9CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87E4192-05AB-4DD7-B6E6-A5BF898A9CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87E4192-05AB-4DD7-B6E6-A5BF898A9CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F7ACF9F-88EF-4266-8385-2F58B2C41DEE} = {96B53258-0AF3-43BE-A104-0B76C8BD32E1}
+		{35233F77-4211-4E75-851B-95968DB98290} = {370C0CEB-3095-46B2-ABC6-BBE3D6B42FF5}
+		{96F39A17-917B-4E71-8F81-E4545E5FD37B} = {8D79D8DB-98A5-4D7A-B555-1B5FA21563E9}
+		{F87E4192-05AB-4DD7-B6E6-A5BF898A9CDA} = {DA420E17-1D20-45FB-A225-FFE243728096}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7AA43286-AF2A-49CE-BA01-5F1607BF98D0}

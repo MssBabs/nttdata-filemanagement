@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IStudentService.cs" />
-    <Compile Include="Implementations\StudentServiceImp.cs" />
+    <Compile Include="Implementations\StudentServiceImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

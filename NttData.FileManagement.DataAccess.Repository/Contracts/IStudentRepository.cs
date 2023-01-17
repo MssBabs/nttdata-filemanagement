@@ -9,6 +9,7 @@ namespace NttData.FileManagement.DataAccess.Repository.Contracts
 {
     public interface IStudentRepository
     {
+        //Try to return a student obj
         bool Add(Student student);
     }
 }

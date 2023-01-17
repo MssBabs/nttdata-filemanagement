@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="frmStudent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmStudent.Designer.cs">
+      <DependentUpon>frmStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,6 +75,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NttData.FileManagement.Business.Logic\NttData.FileManagement.Business.Logic.csproj">
+      <Project>{7f7acf9f-88ef-4266-8385-2f58b2c41dee}</Project>
+      <Name>NttData.FileManagement.Business.Logic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NttData.FileManagement.Common.Model\NttData.FileManagement.Common.Model.csproj">
+      <Project>{f87e4192-05ab-4dd7-b6e6-a5bf898a9cda}</Project>
+      <Name>NttData.FileManagement.Common.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

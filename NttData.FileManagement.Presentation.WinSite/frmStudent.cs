@@ -2,6 +2,7 @@
 using NttData.FileManagement.DataAccess.Repository.Contracts;
 using NttData.FileManagement.DataAccess.Repository.Implementation;
 using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,6 +47,12 @@ namespace NttData.FileManagement.Presentation.WinSite
             studentService.Add(student);
 
             MessageBox.Show("The student is save");
+        }
+
+        private void frmStudent_Load(object sender, EventArgs e)
+        {
+            //string SAttr = @ConfigurationManager.AppSettings.Get("StudentsFilePath");
+            //MessageBox.Show(SAttr);
         }
     }
 }

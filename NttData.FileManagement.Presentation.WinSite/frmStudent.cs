@@ -36,9 +36,12 @@ namespace NttData.FileManagement.Presentation.WinSite
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            IStudentService studentService = new StudentServiceImp();
+            IStudentService studentService = new StudentServiceImpl();
             Student student = new Student();
+            student.Id = int.Parse(txtId.Text);
             student.Name = txtName.Text;
+            student.Surname = txtSurname.Text;
+            student.Birthday = DateTime.Parse(txtBirthday.Text);
 
             studentService.Add(student);
 

@@ -12,7 +12,6 @@ namespace NttData.FileManagement.DataAccess.Repository.Implementation
     {
         public bool Add(Student student)
         {
-            bool studentAgeIsEmpty = true;
             int studentAge = GetStudentAgeByStudentBirthday(student.Birthday);
 
             if(studentAge > 0) 
@@ -22,10 +21,9 @@ namespace NttData.FileManagement.DataAccess.Repository.Implementation
                 //new IStudentRepository obj use StudentRepositoryImp metoh:
                 IStudentRepository iStudentRepository = new StudentRepositoryImp();
                 iStudentRepository.Add(student);
-                studentAgeIsEmpty = false;
             }
 
-            return studentAgeIsEmpty;
+            return true;
         }
 
         private int GetStudentAgeByStudentBirthday(DateTime studentBirthday) 

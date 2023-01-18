@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmStudent));
             this.lblName = new System.Windows.Forms.Label();
             this.lblSurname = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
@@ -41,90 +42,58 @@
             // 
             // lblName
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(27, 41);
+            resources.ApplyResources(this.lblName, "lblName");
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(35, 13);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Name";
             // 
             // lblSurname
             // 
-            this.lblSurname.AutoSize = true;
-            this.lblSurname.Location = new System.Drawing.Point(27, 67);
+            resources.ApplyResources(this.lblSurname, "lblSurname");
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(49, 13);
-            this.lblSurname.TabIndex = 1;
-            this.lblSurname.Text = "Surname";
             this.lblSurname.Click += new System.EventHandler(this.lblSurname_Click);
             // 
             // lblId
             // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(27, 15);
+            resources.ApplyResources(this.lblId, "lblId");
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(16, 13);
-            this.lblId.TabIndex = 2;
-            this.lblId.Text = "Id";
             // 
             // lblBirthday
             // 
-            this.lblBirthday.AutoSize = true;
-            this.lblBirthday.Location = new System.Drawing.Point(27, 93);
+            resources.ApplyResources(this.lblBirthday, "lblBirthday");
             this.lblBirthday.Name = "lblBirthday";
-            this.lblBirthday.Size = new System.Drawing.Size(45, 13);
-            this.lblBirthday.TabIndex = 3;
-            this.lblBirthday.Text = "Birthday";
             this.lblBirthday.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(131, 126);
+            resources.ApplyResources(this.btnSave, "btnSave");
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 4;
-            this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(106, 38);
+            resources.ApplyResources(this.txtName, "txtName");
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 20);
-            this.txtName.TabIndex = 5;
-            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(106, 64);
+            resources.ApplyResources(this.txtSurname, "txtSurname");
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(100, 20);
-            this.txtSurname.TabIndex = 6;
-            this.txtSurname.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(106, 12);
+            resources.ApplyResources(this.txtId, "txtId");
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(100, 20);
-            this.txtId.TabIndex = 7;
-            this.txtId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtBirthday
             // 
-            this.txtBirthday.Location = new System.Drawing.Point(106, 90);
+            resources.ApplyResources(this.txtBirthday, "txtBirthday");
             this.txtBirthday.Name = "txtBirthday";
-            this.txtBirthday.Size = new System.Drawing.Size(100, 20);
-            this.txtBirthday.TabIndex = 8;
-            this.txtBirthday.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtBirthday);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.txtSurname);
@@ -135,7 +104,7 @@
             this.Controls.Add(this.lblSurname);
             this.Controls.Add(this.lblName);
             this.Name = "frmStudent";
-            this.Text = "Form Student";
+            this.Load += new System.EventHandler(this.frmStudent_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

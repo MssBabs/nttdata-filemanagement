@@ -17,7 +17,7 @@ namespace NttData.FileManagement.DataAccess.Repository.Implementation
         public bool Add(Student student)
         {
             //variable de entorno: path
-            string path = ConfigurationManager.AppSettings.Get("StudentFilePath");
+            var path = ConfigurationManager.AppSettings.Get("StudentFilePath");
             string studenTxt = student.ToString() + Environment.NewLine;
             
             if (!File.Exists(path))
@@ -25,10 +25,16 @@ namespace NttData.FileManagement.DataAccess.Repository.Implementation
             else
                 File.AppendAllText(path, studenTxt, Encoding.UTF8);
 
+            /* using (FileStream aFile = new FileStream(path, FileMode.Append, FileAccess.Write))
+             * using (StreamWriter sw = new StreamWriter(aFile))
+             * {
+             *      sw.WriteLine(student.ToString());
+             * }
+            
+             * return File.Exists(path);
+             */
 
             return true;
-
-            throw new NotImplementedException();
         }
     }
 }
